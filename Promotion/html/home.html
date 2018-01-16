@@ -3,8 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Get Promo Code</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" />
+    <style>
+        .custom li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 5px 10px;
+            margin: 10px 10px 10px 10px;
+        }
+    </style>
 </head>
-<body>
+<body class="is-loading">
+<div id="wrapper" class="container-fluid" style="text-align: center;">
+    <section id="main">
+    <header>
+        <h1>Get Promo Code</h1>
+        <ul class="custom">
+            {% for promo in all_promo %}
+            <li>
+                <table>
+                    <tr>
+                        <td><a href="/{{promo.company_keyname}}"><img src="/static/images/{{promo.company_keyname}}.png" height="120"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/{{promo.company_keyname}}">{{promo.company_name}}</a><td>
+                    </tr>
+                </table>
+            </li>
+            {% endfor %}
+        </ul>
+    </header>
+    </section>
+    <footer id="footer">
+        <ul class="copyright">
+            <li>&copy; Get Promo Code</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
 
+</div>
+<!-- Scripts -->
+<!--[if lte IE 8]>
+<script src="/static/assets/js/respond.min.js"></script><![endif]-->
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
 </body>
 </html>
