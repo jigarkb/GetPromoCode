@@ -7,33 +7,45 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>http://www.getpromocode.net/</loc>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.getpromocode.net/coinbase</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.getpromocode.net/deserve</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.getpromocode.net/robinhood</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.getpromocode.net/trello</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.getpromocode.net/uber</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.getpromocode.net/lyft</loc>
-  <priority>0.80</priority>
-</url>
+    <url>
+        <loc>http://www.getpromocode.net/</loc>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/coinbase</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/deserve</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/robinhood</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/trello</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/uber</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/lyft</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/samsungpay</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/squarecash</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.getpromocode.net/circlepay</loc>
+        <priority>0.80</priority>
+    </url>
 
 </urlset>
