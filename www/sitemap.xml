@@ -44,6 +44,10 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>http://www.getpromocode.net/discover</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>http://www.getpromocode.net/circlepay</loc>
         <priority>0.80</priority>
     </url>
