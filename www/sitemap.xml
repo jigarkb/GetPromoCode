@@ -67,4 +67,8 @@
         <loc>http://www.getpromocode.net/doordash</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>http://www.getpromocode.net/thelorenzo</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
