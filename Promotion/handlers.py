@@ -25,6 +25,15 @@ class PromotionHandler(webapp2.RequestHandler):
                 return
 
             template_values = Promotion.get_json_object(company_promo[0])
+            if company_promo[0].promo_title:
+                template_values["title"] = "{promo_title} - {company_name} Promo Code".format(
+                    promo_title=company_promo[0].promo_title,
+                    company_name=company_promo[0].company_name,
+                )
+            else:
+                template_values["title"] = "Promo Code for {company_name}".format(
+                    company_name=company_promo[0].company_name
+                )
             memcachePlus.set(cache_key, json.dumps(template_values))
 
         page = utils.template("promo.html", "Promotion/html")
@@ -67,6 +76,7 @@ class PromotionHandler(webapp2.RequestHandler):
                 promo_code=self.request.get("promo_code", None),
                 promo_type=self.request.get("promo_type", None),
                 promo_note=self.request.get("promo_note", None),
+                promo_title=self.request.get("promo_title", None),
             )
             memcachePlus.delete_multipart(cache_key)
             self.response.out.write(json.dumps({'success': True, 'error': [], 'response': response}))

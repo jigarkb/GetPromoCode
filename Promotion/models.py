@@ -51,6 +51,7 @@ class Promotion(object):
             "promo_code": datastore_entity.promo_code,
             "promo_type": datastore_entity.promo_type,
             "promo_note": datastore_entity.promo_note,
+            "promo_title": datastore_entity.promo_title,
             "modified_at": datastore_entity.modified_at.strftime('%Y-%m-%d %H:%M'),
             "created_at": datastore_entity.created_at.strftime('%Y-%m-%d %H:%M'),
         }
@@ -73,6 +74,7 @@ class Promotion(object):
         datastore_entity.promo_code = json_object["promo_code"]
         datastore_entity.promo_type = json_object["promo_type"]
         datastore_entity.promo_note = json_object["promo_note"]
+        datastore_entity.promo_title = json_object["promo_title"]
 
         return datastore_entity, promotion_exists
 
