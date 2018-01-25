@@ -83,3 +83,34 @@ class PromotionHandler(webapp2.RequestHandler):
         except Exception as e:
             self.response.out.write(json.dumps({'success': False, 'error': e.message, 'response': None}))
             logging.error(traceback.format_exc())
+
+    def update(self):
+        user_info = utils.authenticate_user_account(self, email_list=["jigarbhatt93@gmail.com"])
+        if not user_info:
+            return
+
+        self.response.headers['Content-Type'] = "application/json"
+        self.response.headers['Access-Control-Allow-Origin'] = '*'
+
+        try:
+            company_keyname = self.request.get("company_keyname", None)
+            promotion = Promotion()
+            response = promotion.update(
+                company_keyname=company_keyname,
+                company_name=self.request.get("company_name", None),
+                company_url=self.request.get("company_url", None),
+                company_about=self.request.get("company_about", None),
+                promo_url=self.request.get("promo_url", None),
+                promo_code=self.request.get("promo_code", None),
+                promo_type=self.request.get("promo_type", None),
+                promo_note=self.request.get("promo_note", None),
+                promo_title=self.request.get("promo_title", None),
+            )
+
+            memcachePlus.delete("PromotionHandler.get.{}".format(company_keyname))
+            memcachePlus.delete_multipart("PromotionHandler.fetch_all")
+
+            self.response.out.write(json.dumps({'success': True, 'error': [], 'response': response}))
+        except Exception as e:
+            self.response.out.write(json.dumps({'success': False, 'error': e.message, 'response': None}))
+            logging.error(traceback.format_exc())

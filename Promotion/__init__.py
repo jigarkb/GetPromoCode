@@ -11,5 +11,10 @@ app = webapp2.WSGIApplication([
                   handler_method='add',
                   methods=['POST']),
 
-    ('/([^/]+)?', PromotionHandler) #Always keep this routing last
+    webapp2.Route(template='/promo/update',
+                  handler=PromotionHandler,
+                  handler_method='update',
+                  methods=['POST']),
+
+    ('/([^/]+)?', PromotionHandler)  # Always keep this routing last
 ])

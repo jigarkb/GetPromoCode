@@ -9,7 +9,7 @@ class Promotion(db.Model):
 
     promo_url = db.StringProperty()
     promo_code = db.StringProperty()
-    promo_type = db.StringProperty(choices=["url", "code"])
+    promo_type = db.StringProperty(choices=["url", "code", "email"])
     promo_note = db.TextProperty()
     promo_title = db.StringProperty(default="")
 

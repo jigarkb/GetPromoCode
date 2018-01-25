@@ -1,5 +1,7 @@
 import logging
 
+import copy
+
 import model
 import utils
 
@@ -15,6 +17,25 @@ class Promotion(object):
         if promotion_exists:
             raise Exception("Promotion already present. Try updating it instead!")
 
+        promotion.put()
+
+    def update(self, **data):
+        self.check_validity(method='update', data=data)
+
+        data = {key: val for key, val in data.iteritems() if val != None}
+
+        promotion = model.Promotion.get_by_key_name(data["company_keyname"])
+        if not promotion:
+            raise Exception("Promotion does not exist. Try adding it instead!")
+
+        json_object = self.get_json_object(promotion)
+        old_json_object = copy.copy(json_object)
+        json_object.update(data)
+
+        if json_object == old_json_object:
+            raise Exception('No Changes Made')
+
+        promotion, promotion_exists = self.get_datastore_entity(json_object)
         promotion.put()
 
     @staticmethod
