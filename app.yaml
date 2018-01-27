@@ -13,6 +13,10 @@ builtins:
 - appstats: on
 
 handlers:
+- url: /BingSiteAuth.xml
+  static_files: www/BingSiteAuth.xml
+  upload: www/BingSiteAuth.xml
+
 - url: /sitemap.xml
   static_files: www/sitemap.xml
   upload: www/sitemap.xml
