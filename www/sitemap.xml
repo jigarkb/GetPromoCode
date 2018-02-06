@@ -75,4 +75,8 @@
         <loc>http://www.getpromocode.net/magoosh</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>http://www.getpromocode.net/lino</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
