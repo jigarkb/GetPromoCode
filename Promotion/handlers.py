@@ -24,6 +24,10 @@ class PromotionHandler(webapp2.RequestHandler):
                 self.error(404)
                 return
 
+            if not company_promo[0].promo_running_status:
+                self.error(404)
+                return
+
             template_values = Promotion.get_json_object(company_promo[0])
             if company_promo[0].promo_title:
                 template_values["title"] = "{promo_title} - {company_name} Promo Code".format(
@@ -45,7 +49,7 @@ class PromotionHandler(webapp2.RequestHandler):
         if cached_results:
             result = json.loads(cached_results)
         else:
-            all_promo = Promotion.get()
+            all_promo = Promotion.get(promo_running_status=True)
             result = []
             for company_promo in all_promo:
                 result.append(Promotion.get_json_object(company_promo))
@@ -94,6 +98,15 @@ class PromotionHandler(webapp2.RequestHandler):
 
         try:
             company_keyname = self.request.get("company_keyname", None)
+
+            promo_running_status = self.request.get("promo_running_status", None)
+            if promo_running_status == 'true':
+                promo_running_status = True
+            elif promo_running_status == 'false':
+                promo_running_status = False
+            else:
+                promo_running_status = None
+
             promotion = Promotion()
             response = promotion.update(
                 company_keyname=company_keyname,
@@ -105,7 +118,7 @@ class PromotionHandler(webapp2.RequestHandler):
                 promo_type=self.request.get("promo_type", None),
                 promo_note=self.request.get("promo_note", None),
                 promo_title=self.request.get("promo_title", None),
-                promo_running_status=self.request.get("promo_running_status", None),
+                promo_running_status=promo_running_status,
             )
 
             memcachePlus.delete("PromotionHandler.get.{}".format(company_keyname))

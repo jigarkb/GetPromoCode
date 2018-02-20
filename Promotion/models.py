@@ -46,13 +46,18 @@ class Promotion(object):
 
         i = 0
         for field in filters:
+            if type(filters[field]) == bool:
+                field_value = str(filters[field])
+            else:
+                field_value = "'{}'".format(filters[field])
+
             if i == 0:
                 query_string += " where "
 
             if i < len(filters) - 1:
-                query_string += "%s='%s' and " % (field, filters[field])
+                query_string += "{}={} and ".format(field, field_value)
             else:
-                query_string += "%s='%s'" % (field, filters[field])
+                query_string += "{}={}".format(field, field_value)
             i += 1
 
         response = utils.fetch_gql(query_string)
@@ -73,6 +78,7 @@ class Promotion(object):
             "promo_type": datastore_entity.promo_type,
             "promo_note": datastore_entity.promo_note,
             "promo_title": datastore_entity.promo_title,
+            "promo_running_status": datastore_entity.promo_running_status,
             "modified_at": datastore_entity.modified_at.strftime('%Y-%m-%d %H:%M'),
             "created_at": datastore_entity.created_at.strftime('%Y-%m-%d %H:%M'),
         }
