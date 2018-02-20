@@ -102,6 +102,7 @@ class Promotion(object):
         datastore_entity.promo_type = json_object["promo_type"]
         datastore_entity.promo_note = json_object["promo_note"]
         datastore_entity.promo_title = json_object["promo_title"]
+        datastore_entity.promo_running_status = json_object["promo_running_status"]
 
         return datastore_entity, promotion_exists
 
