@@ -105,6 +105,7 @@ class PromotionHandler(webapp2.RequestHandler):
                 promo_type=self.request.get("promo_type", None),
                 promo_note=self.request.get("promo_note", None),
                 promo_title=self.request.get("promo_title", None),
+                promo_running_status=self.request.get("promo_running_status", None),
             )
 
             memcachePlus.delete("PromotionHandler.get.{}".format(company_keyname))

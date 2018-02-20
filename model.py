@@ -12,6 +12,7 @@ class Promotion(db.Model):
     promo_type = db.StringProperty(choices=["url", "code", "email"])
     promo_note = db.TextProperty()
     promo_title = db.StringProperty(default="")
+    promo_running_status = db.BooleanProperty(default=True)
 
     created_at = db.DateTimeProperty(auto_now_add=True)
     modified_at = db.DateTimeProperty(auto_now=True)
