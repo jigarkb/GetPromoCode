@@ -83,4 +83,8 @@
         <loc>http://www.getpromocode.net/hulu</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>http://www.getpromocode.net/airbnb</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
