@@ -91,4 +91,8 @@
         <loc>http://www.getpromocode.net/tarobites</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>http://www.getpromocode.net/scoop</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
