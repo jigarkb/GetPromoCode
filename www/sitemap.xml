@@ -99,4 +99,8 @@
         <loc>http://www.getpromocode.net/revolut</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>http://www.getpromocode.net/studentuniverse</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
