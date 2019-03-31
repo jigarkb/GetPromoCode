@@ -107,4 +107,8 @@
         <loc>http://www.getpromocode.net/chase</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>http://www.getpromocode.net/triplebyte</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
