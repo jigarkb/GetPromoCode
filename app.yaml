@@ -16,17 +16,21 @@ handlers:
 - url: /BingSiteAuth.xml
   static_files: www/BingSiteAuth.xml
   upload: www/BingSiteAuth.xml
+  secure: always
 
 - url: /sitemap.xml
   static_files: www/sitemap.xml
   upload: www/sitemap.xml
+  secure: always
 
 - url: /robots.txt
   static_files: www/robots.txt
   upload: www/robots.txt
+  secure: always
 
 - url: /static/
   static_dir: static
+  secure: always
 
 - url: /_ah/admin/.*
   script: google.appengine.ext.admin.application
@@ -34,3 +38,4 @@ handlers:
 
 - url: .*
   script: Promotion.app
+  secure: always

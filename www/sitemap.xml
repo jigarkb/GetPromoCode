@@ -8,107 +8,111 @@
 
 
     <url>
-        <loc>http://www.getpromocode.net/</loc>
+        <loc>https://www.getpromocode.net/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/coinbase</loc>
+        <loc>https://www.getpromocode.net/coinbase</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/deserve</loc>
+        <loc>https://www.getpromocode.net/deserve</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/robinhood</loc>
+        <loc>https://www.getpromocode.net/robinhood</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/trello</loc>
+        <loc>https://www.getpromocode.net/trello</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/uber</loc>
+        <loc>https://www.getpromocode.net/uber</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/lyft</loc>
+        <loc>https://www.getpromocode.net/lyft</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/samsungpay</loc>
+        <loc>https://www.getpromocode.net/samsungpay</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/squarecash</loc>
+        <loc>https://www.getpromocode.net/squarecash</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/discover</loc>
+        <loc>https://www.getpromocode.net/discover</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/circlepay</loc>
+        <loc>https://www.getpromocode.net/circlepay</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/binance</loc>
+        <loc>https://www.getpromocode.net/binance</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/ubereats</loc>
+        <loc>https://www.getpromocode.net/ubereats</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/postmates</loc>
+        <loc>https://www.getpromocode.net/postmates</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/doordash</loc>
+        <loc>https://www.getpromocode.net/doordash</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/thelorenzo</loc>
+        <loc>https://www.getpromocode.net/thelorenzo</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/magoosh</loc>
+        <loc>https://www.getpromocode.net/magoosh</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/bookmyforex</loc>
+        <loc>https://www.getpromocode.net/bookmyforex</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/hulu</loc>
+        <loc>https://www.getpromocode.net/hulu</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/airbnb</loc>
+        <loc>https://www.getpromocode.net/airbnb</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/tarobites</loc>
+        <loc>https://www.getpromocode.net/tarobites</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/scoop</loc>
+        <loc>https://www.getpromocode.net/scoop</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/revolut</loc>
+        <loc>https://www.getpromocode.net/revolut</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/studentuniverse</loc>
+        <loc>https://www.getpromocode.net/studentuniverse</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/chase</loc>
+        <loc>https://www.getpromocode.net/chase</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.getpromocode.net/triplebyte</loc>
+        <loc>https://www.getpromocode.net/triplebyte</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.getpromocode.net/hired</loc>
         <priority>0.80</priority>
     </url>
 </urlset>
