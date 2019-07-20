@@ -115,4 +115,8 @@
         <loc>https://www.getpromocode.net/hired</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>https://www.getpromocode.net/xoom</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
