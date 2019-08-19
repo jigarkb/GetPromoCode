@@ -127,4 +127,8 @@
         <loc>https://www.getpromocode.net/lemonade</loc>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>https://www.getpromocode.net/lugg</loc>
+        <priority>0.80</priority>
+    </url>
 </urlset>
